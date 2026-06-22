@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@theme {
+  --color-canvas: #3D0562;
+  --color-canvas-deep: #2A0343;
+  --color-surface: #FFFFFF;
+  --color-start: #9CDF5B;
+  --color-question: #5C1A85;
+  --color-end: #94A3B8;
+  --color-text-dark: #1A0529;
+  --color-pill-bg: #F4EAF8;
+  --color-border-card: #E2D4ED;
+}
