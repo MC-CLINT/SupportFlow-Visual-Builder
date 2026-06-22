@@ -8,7 +8,7 @@ export default function EditPanel({ node, onUpdateText, onClose }) {
   const label = TYPE_LABELS[node.type]
 
   return (
-    <div className="w-80 bg-surface rounded-xl border border-border-card p-5 shrink-0">
+    <div className="w-80 bg-surface rounded-xl border border-border-card p-5 shrink-0 shadow-lg">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <span

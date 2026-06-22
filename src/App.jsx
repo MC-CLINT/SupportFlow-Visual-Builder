@@ -51,7 +51,7 @@ function App() {
 
       {/* Conditional rendering based on mode */}
       {mode === 'editor' ? (
-        <div className="flex gap-6 items-start">
+        <div className="relative">
           <Canvas
             nodes={nodes}
             selectedId={selectedId}
@@ -59,11 +59,13 @@ function App() {
             nodeMap={nodeMap}
           />
           {selectedNode && (
+            <div className="absolute top-4 right-4">
             <EditPanel
               node={selectedNode}
               onUpdateText={handleUpdateText}
               onClose={() => setSelectedId(null)}
             />
+             </div>
           )}
         </div>
       ) : (

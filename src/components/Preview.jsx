@@ -34,7 +34,7 @@ export default function Preview({ nodeMap, startNode }) {
         {/* Chat header */}
         <div className="bg-canvas px-5 py-3">
           <p className="text-white text-sm font-semibold">SupportFlow Bot</p>
-          <p className="text-white/50 text-xs">Preview mode — test your flow</p>
+          <p className="text-white/50 text-xs">Preview mode: test your flow</p>
         </div>
 
         {/* Messages */}
