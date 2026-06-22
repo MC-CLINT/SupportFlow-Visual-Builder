@@ -3,6 +3,8 @@ import Canvas from './components/Canvas'
 import EditPanel from './components/EditPanel'
 import Preview from './components/Preview'
 import flowData from '../flow_data.json'
+import ExportButton from './components/ExportButton'
+
 
 function App() {
   const [nodes, setNodes] = useState(flowData.nodes)
@@ -42,8 +44,9 @@ function App() {
               : 'bg-start text-canvas-deep'
           }`}
         >
-          {mode === 'editor' ? '▶ Play' : '✕ Back to Editor'}
+          {mode === 'editor' ? 'Play' : 'Back to Editor'}
         </button>
+        {mode === 'editor' && <ExportButton nodes={nodes} />}
       </div>
 
       {/* Conditional rendering based on mode */}
