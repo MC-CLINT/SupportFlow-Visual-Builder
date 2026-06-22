@@ -1,13 +1,7 @@
-import { useMemo } from 'react'
 import NodeCard from './NodeCard'
 import Connectors from './Connectors'
 
-export default function Canvas({ nodes, selectedId, onSelectNode }) {
-  const nodeMap = useMemo(
-    () => new Map(nodes.map((n) => [n.id, n])),
-    [nodes]
-  )
-
+export default function Canvas({ nodes, selectedId, onSelectNode, nodeMap }) {
   return (
     <div
       className="relative bg-canvas mx-auto overflow-hidden"
